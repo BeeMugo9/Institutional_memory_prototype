@@ -8,7 +8,7 @@ An Institutional Memory Prototype: Typed Handover Narrative Search App
 
 The live link to the app is here:
 
-xxxx
+(http://127.0.0.1:5000/)
 
 ## GitHub Repository
 
