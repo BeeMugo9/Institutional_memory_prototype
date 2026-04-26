@@ -108,7 +108,7 @@ Future versions may use:
 ## 5. Project Folder Structure
 
 ```text
-msf-institutional-memory-prototype/
+Institutional-memory-prototype/
 │
 ├── app.py
 ├── requirements.txt
