@@ -1,0 +1,43 @@
+[
+  {
+    "title": "Staffing Gaps and Increased Workload \u2013 HR Update April 2026",
+    "text": "Over the past month, the project has experienced significant staffing challenges due to the departure of two key international staff members and delays in onboarding their replacements. This has resulted in increased workload for the remaining team, particularly affecting the medical and data management departments.\r\n\r\nSeveral national staff have been required to take on additional responsibilities beyond their initial scope, leading to signs of fatigue and reduced morale. There have also been delays in routine administrative processes, including contract renewals and leave approvals, due to limited HR capacity.",
+    "date": "2026-04-27 00:59"
+  },
+  {
+    "title": "Security Incident and Movement Restrictions \u2013 April 2026",
+    "text": "During the reporting period, a security incident occurred in the project area involving armed confrontation between local groups approximately 10 kilometers from the main health facility. Although no staff were directly affected, the incident has led to increased tension in the surrounding communities.\r\n\r\nFollowing the incident, movement restrictions were implemented, limiting field visits and outreach activities. This has impacted service delivery, particularly in remote areas that rely on mobile clinics.",
+    "date": "2026-04-27 01:13"
+  },
+  {
+    "title": "Pharmacy Handover",
+    "text": "There was a shortage of antibiotics last week.",
+    "date": "2026-04-27 01:16"
+  },
+  {
+    "title": "DHIS2 Reporting Delay \u2013 Field Data Officer (April 2026)",
+    "text": "During the month of April 2026, there were consistent delays in submitting DHIS2 reports from the field level, particularly from the outreach sites in the northern region. The Field Data Officer responsible for compiling and submitting weekly aggregate data experienced multiple challenges that affected timely reporting.\r\n\r\nFirstly, there were intermittent internet connectivity issues in the field locations, which made it difficult to access the DHIS2 platform consistently. On several occasions, the officer had to wait until traveling back to the main project office to upload the data, leading to delays of up to 3\u20135 days beyond the expected reporting timeline.\r\n\r\nSecondly, there were data quality concerns at the source level. Some facility registers were incomplete or had discrepancies, requiring the officer to go back and verify the information with clinical staff before submission. This additional verification step, while necessary for data accuracy, contributed further to delays.\r\n\r\nAdditionally, there was a workload constraint. The Field Data Officer was supporting multiple sites simultaneously due to a temporary staffing gap, which increased the volume of data to be managed and reduced the time available for timely DHIS2 entry and validation.\r\n\r\nAs a result of these combined factors, weekly DHIS2 submissions were often late, which impacted the consolidation of reports at the coordination level and delayed decision-making for program interventions.\r\n\r\nTo address this issue, it is recommended that:\r\n1. Offline data entry tools or backup connectivity solutions be explored to support timely submissions from remote locations.\r\n2. Additional training be provided to facility staff to improve data completeness at the point of collection.\r\n3. Temporary support or redistribution of workload be considered during staffing gaps.\r\n4. A clear escalation and follow-up mechanism be established for delayed reporting.\r\n\r\nThis situation should be monitored closely in the coming weeks to ensure improvements in both timeliness and data quality.",
+    "date": "2026-04-27 01:16"
+  },
+  {
+    "title": "Severe Malnutrition Case Management and Clinical Complications \u2013 April 2026",
+    "text": "During the reporting period, the stabilization center admitted a 3-year-old patient presenting with severe acute malnutrition (SAM) complicated by pneumonia and suspected sepsis. The patient was admitted with MUAC below 11.5 cm, bilateral pitting edema, and signs of respiratory distress.",
+    "date": "2026-04-27 01:36"
+  },
+  {
+    "title": "Postpartum Hemorrhage Management and Follow-up \u2013 April 2026",
+    "text": "During the reporting period, a 28-year-old female patient was admitted to the maternity ward following delivery with signs of postpartum hemorrhage (PPH). The patient presented with excessive bleeding estimated at over 500 ml within the first hour post-delivery, accompanied by tachycardia and a drop in blood pressure.\r\n\r\nImmediate management was initiated according to MSF obstetric emergency protocols. Uterotonic agents, including oxytocin, were administered, and uterine massage was performed. Intravenous fluids were started to stabilize the patient, and blood transfusion was prepared due to suspected significant blood loss.",
+    "date": "2026-04-27 01:37"
+  },
+  {
+    "title": "Security Incident and Movement Restrictions \u2013 April 2026",
+    "text": "During the reporting period, a security incident occurred in the vicinity of the project\u2019s primary operational area involving armed confrontation between two local groups approximately 8\u201310 kilometers from the main health facility. While no personnel were directly affected, the incident significantly increased tensions within the surrounding communities.",
+    "date": "2026-04-27 01:42"
+  },
+  {
+    "title": "Demo: Improving Data Reporting Timeliness \u2013 April 2026",
+    "text": "This is a training and demonstration note created to illustrate how the Institutional Memory Prototype can be used to capture and retrieve operational knowledge.\r\n\r\nDuring recent internal reviews, teams identified delays in routine reporting processes, particularly in weekly activity summaries. These delays were mainly due to inconsistent data entry practices and lack of clear reporting timelines.",
+    "access_tier": "5",
+    "date": "2026-04-27 01:44"
+  }
+]

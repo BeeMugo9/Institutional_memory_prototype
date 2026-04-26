@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Institutional Memory Prototype</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #1f2937;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #0f766e, #1d4ed8);
+            color: white;
+            padding: 35px 55px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .header p {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .container {
+            padding: 30px 55px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: #0f766e;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 12px;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 15px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background: #0f766e;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background: #115e59;
+        }
+
+        .search-button {
+            background: #1d4ed8;
+        }
+
+        .search-button:hover {
+            background: #1e40af;
+        }
+
+        .delete-button {
+            background: #b91c1c;
+        }
+
+        .delete-button:hover {
+            background: #991b1b;
+        }
+
+        .message {
+            color: #0f766e;
+            font-weight: bold;
+        }
+
+        .results {
+            grid-column: span 2;
+        }
+
+        .result-card {
+            background: #ffffff;
+            border-left: 6px solid #0f766e;
+            border-radius: 12px;
+            padding: 18px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .result-card h3 {
+            margin-top: 0;
+            color: #1d4ed8;
+        }
+
+        .meta {
+            font-size: 14px;
+            color: #64748b;
+            margin-bottom: 8px;
+        }
+
+        .tier {
+            display: inline-block;
+            background: #e0f2fe;
+            color: #075985;
+            padding: 6px 10px;
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .help-text {
+            color: #475569;
+            line-height: 1.6;
+        }
+
+        .footer {
+            padding: 20px 55px;
+            font-size: 13px;
+            color: #64748b;
+        }
+
+        @media (max-width: 900px) {
+            .container {
+                grid-template-columns: 1fr;
+                padding: 25px;
+            }
+
+            .results {
+                grid-column: span 1;
+            }
+
+            .header {
+                padding: 30px 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Institutional Memory Prototype</h1>
+        <p>
+            Dashboard for saving, classifying, and searching handover notes,
+            sitreps, and operational knowledge.
+        </p>
+    </div>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>Add Handover Note</h2>
+
+            <form method="POST">
+                <input type="hidden" name="action" value="save">
+
+                <label for="title">Note Title</label>
+                <input
+                    type="text"
+                    id="title"
+                    name="title"
+                    placeholder="Example: Pharmacy Handover - April 2026"
+                    required
+                >
+
+                <label for="note_text">Handover Narrative</label>
+                <textarea
+                    id="note_text"
+                    name="note_text"
+                    rows="10"
+                    placeholder="Paste your handover note here"
+                    required
+                ></textarea>
+
+                <label for="access_tier">Access Tier</label>
+                <select id="access_tier" name="access_tier">
+                    <option value="5">Tier 5 - Public / Training Demo</option>
+                    <option value="4">Tier 4 - Programme / General Operations</option>
+                    <option value="3">Tier 3 - HR Restricted</option>
+                    <option value="2">Tier 2 - Security Restricted</option>
+                    <option value="1">Tier 1 - Clinical / Medical Restricted</option>
+                </select>
+
+                <button type="submit">Save Note</button>
+            </form>
+
+            <p class="message">{{ message }}</p>
+        </div>
+
+        <div class="card">
+            <h2>Search Institutional Memory</h2>
+
+            <form method="POST">
+                <input type="hidden" name="action" value="search">
+
+                <label for="query">Search Keyword</label>
+                <input
+                    type="text"
+                    id="query"
+                    name="query"
+                    placeholder="Search for pharmacy, staffing, outbreak, DHIS2..."
+                    required
+                >
+
+                <button class="search-button" type="submit">Search</button>
+            </form>
+
+            <p class="help-text">
+                Use this section to retrieve previously saved operational knowledge.
+                Example searches include <strong>stock</strong>, <strong>staffing</strong>,
+                <strong>cholera</strong>, <strong>security</strong>, and <strong>DHIS2</strong>.
+            </p>
+        </div>
+
+        <div class="card results">
+            <h2>Search Results</h2>
+
+            {% if results %}
+                {% for result in results %}
+                    <div class="result-card">
+                        <h3>{{ result.title }}</h3>
+
+                        <p class="meta">
+                            <strong>Date:</strong> {{ result.date }}
+                        </p>
+
+                        <div class="tier">
+                            Access Tier: {{ result.access_tier }}
+                        </div>
+
+                        <p>{{ result.text }}</p>
+
+                        <form method="POST">
+                            <input type="hidden" name="action" value="delete">
+                            <input type="hidden" name="index" value="{{ loop.index0 }}">
+                            <button class="delete-button" type="submit">Delete Note</button>
+                        </form>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>No results found yet. Add notes and search using keywords.</p>
+            {% endif %}
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Prototype for typed handover narratives, access-tier classification, and institutional memory search.
+    </div>
+
+</body>
+</html>
