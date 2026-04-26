@@ -8,7 +8,7 @@ An Institutional Memory Prototype: Typed Handover Narrative Search App
 
 The live link to the app is here:
 
-institutional-memory-prototype-hjfbbbccddbahkca.southafricanorth-01.azurewebsites.net 
+(https://institutional-memory-prototype-hjfbbbccddbahkca.southafricanorth-01.azurewebsites.net/)
 
 ## GitHub Repository
 
