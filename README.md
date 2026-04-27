@@ -14,7 +14,7 @@ The live link to the app is here:
 
 This project is saved on GitHub under:
 
-https://github.com/Beemu9/Institutional_memory_prototype
+(https://github.com/BeeMugo9/Institutional_memory_prototype/tree/main)
 
 ---
 
